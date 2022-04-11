@@ -1,44 +1,66 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import Github from '../assets/images/Github.png'
+import Email from '../assets/images/Email.png'
+import LinkedIn from '../assets/images/LinkedIn.png'
+import { styled } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import Grid from '@mui/material/Grid';
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
+
+const Img = styled('img')({
+  margin: 'auto',
+  display: 'block',
+  maxWidth: '100%',
+  maxHeight: '100%',
+});
 
 const ContactMe = () => {
     return ( 
-      <Box
+      <Grid
       display="flex" 
       marginTop="5%"
       flexDirection= "column"
       alignItems="center"
       justifyContent="center"
+      textAlign="center"
       >
-          
-        <Typography variant="h1"> 
-        Check out my LinkedIn and Github:  
+        <Grid item> 
+        <ThemeProvider theme={theme}>
+        <Typography variant="h2"> 
+        Get into contact from LinkedIn and Email:  
         </Typography>
+        </ThemeProvider>
+        </Grid>
 
-      <Box 
+      <Grid item
       display="flex" 
-      marginTop="5%"
+      margin="5%"
       flexDirection= "row"
       alignItems="center"
       justifyContent="space-evenly"
       alignContent="space-evenly"
-      width="50%">
+      width="50%"
+      >
+        <ThemeProvider theme={theme}> 
+      <Grid item
+      sx={{ marginRight:3 }}
+      >
+        <Typography variant="h4"> Email Adress </Typography>
+          <Img src={Email} alt="Home-Logo" /> 
+      </Grid>
 
-      <Box>
-        <Typography> Git Hub Page Here </Typography>
-          <img src={Github} alt="Home-Logo" /> 
-      </Box>
+      <Grid item
+      sx={{ marginLeft:3 }}>
+        <Typography variant="h4"> LinkedIn Page Here </Typography>
+          <Img src={LinkedIn} alt="Home-Logo" /> 
+      </Grid>
+      </ThemeProvider>
 
-      <Box>
-        <Typography> LinkedIn Page Here </Typography>
-          <img src={Github} alt="Home-Logo" /> 
-      </Box>
-      </Box>
-
-
-      </Box>
+      </Grid>
+      </Grid>
     )
 }
 

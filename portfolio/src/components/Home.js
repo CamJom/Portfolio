@@ -2,45 +2,95 @@ import { Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import CSS from '../assets/images/CSS.png'
-import Github from '../assets/images/Github.png'
 import HTML from '../assets/images/HTML.png'
 import JS from '../assets/images/JS.png'
 import MongoDB from '../assets/images/MongoDB.png'
 import ReactIcon from '../assets/images/ReactIcon.png'
+import Grid from '@mui/material/Grid';
+import { styled } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
+
+const Img = styled('img')({
+  margin: 'auto',
+  display: 'block',
+  maxWidth: '100%',
+  maxHeight: '100%',
+});
 
 const Home = () => {
     return ( 
-        <Box
-        display="flex" 
-        marginTop="5%"
-        flexDirection= "column"
+
+
+      <Grid> 
+
+        <Grid item
+        container
+        direction="row"
+        justifyContent="space-evenly"
         alignItems="center"
-        justifyContent="center"
+        marginTop="5%"
         >
+
+          <Grid item
+          margin="2%"
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
+          >
+          <ThemeProvider theme={theme}>
           <Typography variant="h1"> 
           Welcome! I'm Jomari Camangon!
           </Typography>
-          <br />
+          </ThemeProvider>
+          </Grid>
+
+          <Grid item 
+          container
+          direction="row"
+          justifyContent="center"
+          alignItems="center"
+          textAlign="center"
+          sx={{ marginBottom:5 }}
+          >
+          <ThemeProvider theme={theme}>
           <Typography variant="h2"> 
           This is my Portfolio Website!
           </Typography>
-          <Box 
-          display="flex" 
-          marginTop="2%"
-          flexDirection= "row"
-          alignItems="center"
-          justifyContent="space-evenly"
-          flexWrap= "wrap"
-          width="90%"
+          </ThemeProvider>
+          </Grid>
+
+          <Grid item
+            container
+            direction="row"
+            justifyContent="space-evenly"
+            alignItems="center"
+            marginTop="2%"
+            sx={{ margin:1 }}
           >
-          <img src={CSS} alt="Home-Logo" /> 
-          <img src={HTML} alt="Home-Logo" /> 
-          <img src={JS} alt="Home-Logo" /> 
-          <img src={ReactIcon} alt="Home-Logo" /> 
-          <img src={MongoDB} alt="Home-Logo" /> 
-          <img src={Github} alt="Home-Logo" /> 
-          </Box>
-        </Box>
+            <Grid item>
+            <Img src={CSS} alt="Home-Logo" /> 
+            </Grid>
+            <Grid item>
+            <Img src={HTML} alt="Home-Logo" /> 
+            </Grid>
+            <Grid item>
+            <Img src={JS} alt="Home-Logo" /> 
+            </Grid>
+            <Grid item>
+            <Img src={ReactIcon} alt="Home-Logo" /> 
+            </Grid>
+            <Grid item>
+            <Img src={MongoDB} alt="Home-Logo" /> 
+            </Grid>
+          </Grid>
+
+          </Grid>
+        </Grid>
     )
 }
 
