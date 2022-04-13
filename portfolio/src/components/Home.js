@@ -9,10 +9,10 @@ import ReactIcon from '../assets/images/ReactIcon.png'
 import Grid from '@mui/material/Grid';
 import { styled } from '@mui/material/styles';
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
+import Grow from '@mui/material/Grow';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
-
 const Img = styled('img')({
   margin: 'auto',
   display: 'block',
@@ -21,19 +21,17 @@ const Img = styled('img')({
 });
 
 const Home = () => {
+  const [checked, setChecked] = React.useState(true);
     return ( 
-
-
+      <Box height="100vh" width="auto" sx={{}} >
       <Grid> 
-
         <Grid item
         container
         direction="row"
         justifyContent="space-evenly"
         alignItems="center"
-        marginTop="5%"
+        paddingTop="5%"
         >
-
           <Grid item
           margin="2%"
           container
@@ -43,9 +41,12 @@ const Home = () => {
           textAlign="center"
           >
           <ThemeProvider theme={theme}>
+          <Grow in={checked} style={{ transformOrigin: 'top' }}
+          {...(checked ? { timeout: 1000 } : {})}>
           <Typography variant="h1"> 
           Welcome! I'm Jomari Camangon!
           </Typography>
+          </Grow>
           </ThemeProvider>
           </Grid>
 
@@ -58,9 +59,14 @@ const Home = () => {
           sx={{ marginBottom:5 }}
           >
           <ThemeProvider theme={theme}>
+          <Grow in={checked} style={{ transformOrigin: 'top' }}
+          {...(checked ? { timeout: 1500 } : {})}>
           <Typography variant="h2"> 
-          This is my Portfolio Website!
+          Aspiring Junior Developer,
+          <br />
+          Proffesional Food Enthusiast!
           </Typography>
+          </Grow>
           </ThemeProvider>
           </Grid>
 
@@ -72,25 +78,41 @@ const Home = () => {
             marginTop="2%"
             sx={{ margin:1 }}
           >
+                  <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout:2000 } : {})}>
             <Grid item>
             <Img src={CSS} alt="Home-Logo" /> 
             </Grid>
+            </Grow>
+            <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout: 3000 } : {})}>
             <Grid item>
             <Img src={HTML} alt="Home-Logo" /> 
             </Grid>
+            </Grow>
+            <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout: 4000 } : {})}>
             <Grid item>
             <Img src={JS} alt="Home-Logo" /> 
             </Grid>
+            </Grow>
+            <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout: 5000 } : {})}>
             <Grid item>
             <Img src={ReactIcon} alt="Home-Logo" /> 
             </Grid>
+            </Grow>
+            <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout: 6000 } : {})}>
             <Grid item>
             <Img src={MongoDB} alt="Home-Logo" /> 
             </Grid>
+            </Grow>
           </Grid>
 
           </Grid>
         </Grid>
+        </Box>
     )
 }
 

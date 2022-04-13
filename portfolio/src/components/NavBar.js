@@ -1,10 +1,9 @@
 import React from "react";
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
-import HomeIcon from '../assets/images/HomeIcon.png'
+import HomeIcon2 from '../assets/images/HomeIcon2.png'
 import { createTheme, responsiveFontSizes, ThemeProvider } from '@mui/material/styles';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
@@ -22,11 +21,11 @@ const Img = styled('img')({
 export default function ButtonAppBar() {
   return (
     <Grid sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+      <AppBar sx={{ bgcolor:"#2dbc94"}} position="static">
         <Toolbar>
-          <Grid item marginRight="5%"> 
+          <Grid item marginRight="5%" sx={{ padding:"10px", margin:"0.5%", borderRadius:"25%", bgcolor: "#a6e6db" }}> 
             <Link href='/' color="inherit" underline="none">  
-              <Img height="50px" src={HomeIcon} alt="Home-Logo" /> 
+              <Img height="35px" src={HomeIcon2} alt="Home-Logo" /> 
             </Link> 
           </Grid>
           <Grid item
