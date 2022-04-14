@@ -70,7 +70,7 @@ const ContactMe = () => {
       <Grid item
       sx={{ marginRight:3 }}
       >
-        <Typography variant="h4"> Email Adress </Typography>
+        <Typography variant="h4"> Email Address </Typography>
           <Img height="100" src={Email} alt="Email-Logo" /> 
         <Typography variant="h6"> Jomari1095@gmail.com </Typography>
       </Grid>

@@ -64,7 +64,7 @@ const Home = () => {
           <Typography variant="h2"> 
           Aspiring Junior Developer,
           <br />
-          Proffesional Food Enthusiast!
+          Professional Food Enthusiast!
           </Typography>
           </Grow>
           </ThemeProvider>
