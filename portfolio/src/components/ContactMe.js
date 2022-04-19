@@ -9,6 +9,7 @@ import Github from '../assets/images/Github.png'
 import Link from '@mui/material/Link';
 import { Box } from "@mui/system";
 import Grow from '@mui/material/Grow';
+import Button from '@mui/material/Button';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -72,7 +73,20 @@ const ContactMe = () => {
       >
         <Typography variant="h4"> Email Address </Typography>
           <Img height="100" src={Email} alt="Email-Logo" /> 
+          <Button
+   variant="contained"
+   size="large"
+   color="success"
+   target="_top"
+   href={`mailto:jomari1095@gmail.com`}
+>
+   <Typography variant="button" style={{ fontSize: '0.69rem' }}>
+      Drop an Email
+   </Typography>
+</Button>
         <Typography variant="h6"> Jomari1095@gmail.com </Typography>
+        
+
       </Grid>
       </Grow>
 

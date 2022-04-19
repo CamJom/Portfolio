@@ -31,8 +31,12 @@ const Projects = () => {
 
   const project1 = () => { window.open("https://bit.ly/3Dj2Kkv") }
   const project2 = () => { window.open("https://bit.ly/3DiwCNB") }
-  const project3 = () => { window.open("https://space-book-sei61.herokuapp.com/") }
-  const project4 = () => { window.open("https://www.google.com") }
+  const project3 = () => { window.open("https://bit.ly/3Ej8pY0") }
+  const project4 = () => { window.open("https://bit.ly/3vmkXKo") }
+  const gitHubproject1 = () => { window.open("https://github.com/CamJom/SEI-Project-1-Mastermind") }
+  const gitHubproject2 = () => { window.open("https://github.com/CamJom/SEI-Project-2-RecipeApp") }
+  const gitHubproject3 = () => { window.open("https://github.com/CamJom/SEI-Project-3-SpaceBook") }
+  const gitHubproject4 = () => { window.open("https://github.com/CamJom/SEI-Project-4-ZooVisit") }
 
 
   const [checked, setChecked] = React.useState(true);
@@ -66,9 +70,11 @@ const Projects = () => {
           </Grid>
           <Grid item>
           <Typography variant="h6">
-            An interactive learning website 
+            The interactive learning website 
             Zoo Visit! gives the user interesting facts and trivia 
             on different animals in thier corresponding biomes. 
+            <br />
+            Timeframe: 8 days
             <Typography variant="h6" marginTop="5%"> Languages used: </Typography>
             <Grid item >
             <Box component="div" margin="0px 3px" padding="3px 5px" borderRadius="10px" sx={{ bgcolor:"#2dbc94", display: 'inline' }}> Python </Box>
@@ -81,6 +87,7 @@ const Projects = () => {
             </Grid>
             <br />
             <Button variant="contained" color="success" onClick={project4}> Visit the website </Button>
+            <Button variant="contained" color="success" onClick={gitHubproject4} sx={{ marginTop:"5px"}}> Github Page </Button>
           </Typography>
           </Grid>
           </Grid>
@@ -106,6 +113,8 @@ const Projects = () => {
           <Typography variant="h6">
             Book your trip to space with us SpaceBook.
             Your intergalactic travel website! 
+            <br />
+            Timeframe: 8 days
             <Typography variant="h6" marginTop="5%"> Languages used: </Typography>
             <Grid item >
             <Box component="div" margin="0px 3px" padding="3px 5px" borderRadius="10px" sx={{ bgcolor:"#2dbc94", display: 'inline' }}> MongoDB </Box>
@@ -119,6 +128,7 @@ const Projects = () => {
               P.S The website might take a little time to load 
             </Typography>
             <Button variant="contained" color="success" onClick={project3}> Visit the website </Button>
+            <Button variant="contained" color="success" onClick={gitHubproject3} sx={{ marginTop:"5px"}}> Github Page </Button>
           </Typography>
           </Grid>
           </Grid>
@@ -143,7 +153,9 @@ const Projects = () => {
           </Grid>
           <Grid item marginTop="2%">
           <Typography variant="h6">
-            Dont know what to cook? come and visit our RecipeApp website and browse around our mutitide of recipes. 
+            Dont know what to cook? Come and visit our RecipeApp website and browse around our mutitide of recipes.
+            <br />
+            Timeframe: 2 days 
             <Typography variant="h6" marginTop="5%"> Languages used: </Typography>
             <Grid item marginTop="5px">
             <Box component="div" margin="0px 3px" padding="3px 5px" borderRadius="10px" sx={{ bgcolor:"#2dbc94", display: 'inline' }}> JavaScript </Box>
@@ -154,6 +166,7 @@ const Projects = () => {
             </Grid>
             <br />
             <Button variant="contained" color="success"onClick={project2}> Visit the website </Button>
+            <Button variant="contained" color="success" onClick={gitHubproject2} sx={{ marginTop:"5px"}}> Github Page </Button>
           </Typography>
           </Grid>
           </Grid>
@@ -177,7 +190,9 @@ const Projects = () => {
           </Grid>
           <Grid item marginTop="5%">
           <Typography variant="h6">
-            Come and play my Mastermind clone and make your way to Mount Doom!  
+            Come and play my Mastermind clone and make your way to Mount Doom!
+            <br />
+            Timeframe: 8 days  
             <Typography variant="h6" marginTop="5%"> Languages used: </Typography>
             <Grid item >
             <Box component="div" margin="0px 3px" padding="3px 5px" borderRadius="10px" sx={{ bgcolor:"#2dbc94", display: 'inline' }}> JavaScript </Box>
@@ -186,6 +201,7 @@ const Projects = () => {
             </Grid>
             <br />
             <Button variant="contained" color="success" onClick={project1}> Visit the website </Button>
+            <Button variant="contained" color="success" onClick={gitHubproject1} sx={{ marginTop:"5px"}}> Github Page </Button>
           </Typography>
           </Grid>
           </Grid>
