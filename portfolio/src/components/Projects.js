@@ -65,13 +65,14 @@ const Projects = () => {
         <ThemeProvider theme={theme}>
           <Grid sx={{ maxWidth:300 }}>
           <Typography variant="h4"> Zoo Visit! </Typography>
-          <Grid item margin="5% 0%"xs={4}>
+          <Typography variant="h6"> Solo Project </Typography>
+          <Grid item margin="4%"xs={4}>
           <Img src={Project4} alt="Project4" />
           </Grid>
           <Grid item>
           <Typography variant="h6">
             The interactive learning website 
-            Zoo Visit! gives the user interesting facts and trivia 
+            Zoo Visit! Gives the user interesting facts and trivia 
             on different animals in thier corresponding biomes. 
             <br />
             Timeframe: 8 days
@@ -106,7 +107,8 @@ const Projects = () => {
         <ThemeProvider theme={theme}>
           <Grid sx={{ maxWidth:300 }}>
           <Typography variant="h4"> SpaceBook </Typography>
-          <Grid item marginTop="2%"xs={4}>
+          <Typography marginBottom="10px" variant="h6"> 3 Person Group Project </Typography>
+          <Grid item margin="2%"xs={4}>
           <Img src={Project3} alt="Project3" />
           </Grid>
           <Grid item marginTop="5%">
@@ -148,6 +150,7 @@ const Projects = () => {
         <ThemeProvider theme={theme}>
           <Grid sx={{ maxWidth:300 }}>
           <Typography variant="h4"> Recipe App </Typography>
+          <Typography marginBottom="8px" variant="h6"> Pair Project </Typography>
           <Grid item marginTop="2%"xs={4}>
           <Img src={Project2} alt="Project2" />
           </Grid>
@@ -185,6 +188,7 @@ const Projects = () => {
         <ThemeProvider theme={theme}>
           <Grid sx={{ maxWidth:300 }}>
           <Typography variant="h4"> Mastermind! </Typography>
+          <Typography variant="h6"> Solo Project </Typography>
           <Grid item marginTop="2%"xs={4}>
           <Img src={Project1} alt="Project1" />
           </Grid>

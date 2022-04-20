@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import ContactMe from "./components/ContactMe";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
             <Route path="/contact" element={<ContactMe />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/skills" element={<Skills />} />
           </Routes>
       </BrowserRouter>
       </ThemeProvider>

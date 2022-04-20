@@ -39,7 +39,10 @@ export default function ButtonAppBar() {
             <Typography variant="h6" component="div">
             <Link href='/about'color="inherit" underline="none"> About Me </Link>
             </Typography>
-            
+
+            <Typography variant="h6" component="div">
+            <Link href='/skills'color="inherit" underline="none"> Skills </Link>
+            </Typography>
             
             <Typography link='/projects' variant="h6" component="div" margin="1%">
             <Link href='/projects'color="inherit" underline="none"> My Projects </Link>

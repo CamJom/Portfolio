@@ -68,26 +68,21 @@ const ContactMe = () => {
         <ThemeProvider theme={theme}> 
         <Grow in={checked} style={{ transformOrigin: 'top' }}
           {...(checked ? { timeout: 1000 } : {})}>
+            <Button
+   target="_top"
+   sx={{color:"black" }}
+   href={`mailto:jomari1095@gmail.com`}
+>
       <Grid item
       sx={{ marginRight:3 }}
       >
         <Typography variant="h4"> Email Address </Typography>
           <Img height="100" src={Email} alt="Email-Logo" /> 
-          <Button
-   variant="contained"
-   size="large"
-   color="success"
-   target="_top"
-   href={`mailto:jomari1095@gmail.com`}
->
-   <Typography variant="button" style={{ fontSize: '0.69rem' }}>
-      Drop an Email
-   </Typography>
-</Button>
         <Typography variant="h6"> Jomari1095@gmail.com </Typography>
         
 
       </Grid>
+      </Button>
       </Grow>
 
       <Grow in={checked} style={{ transformOrigin: 'top' }}
