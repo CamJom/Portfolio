@@ -25,7 +25,7 @@ import Trello from "../assets/images/Trello.png"
 import VSCode from "../assets/images/VSCode.png"
 import Yarn from "../assets/images/Yarn.png"
 import { styled } from '@mui/material/styles';
-import { Brightness1TwoTone } from "@mui/icons-material";
+import Git from "../assets/images/Git.png"
 
 
 
@@ -141,42 +141,42 @@ const Skills = () => {
           {...(checked ? { timeout:2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={MaterialUI} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Material UI </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}>Material UI</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={MongoDB} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> MongoDB </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}>MongoDB</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={Python} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Python </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}>Python</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={Figma} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Figma </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}>Figma</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={Yarn} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Yarn </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}>Yarn</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
             <Grid item margin="0px 10px">
             <Img src={NPM} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> NPM </Typography> 
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> NPM</Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
@@ -195,16 +195,23 @@ const Skills = () => {
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={NodeJS} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Node.js </Typography>  
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={TablePlus} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> TablePlus </Typography>  
+            </Grid>
+            </Grow>
+            <Grow in={checked} style={{ transformOrigin: 'center' }}
+          {...(checked ? { timeout: 2000 } : {})}>
+            <Grid item margin="0px 10px"> 
+            <Img src={Git} alt="Home-Logo" />
+            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Git </Typography>  
             </Grid>
             </Grow>
           </Grid>
@@ -232,37 +239,41 @@ const Skills = () => {
           >
         <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout:2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={Django} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Django </Typography>  
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout:2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={TypeScript} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> TypeScript </Typography> 
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={Insomnia} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Insomnia </Typography>  
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
-            <Grid item>
+            <Grid item margin="0px 10px">
             <Img src={Heroku} alt="Home-Logo" />
             <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> Heroku </Typography>  
             </Grid>
             </Grow>
             <Grow in={checked} style={{ transformOrigin: 'center' }}
           {...(checked ? { timeout: 2000 } : {})}>
-            <Grid item>
+            <Grid item 
+            container
+            direction="column"
+            alignItems="center"
+            margin="0px 10px">
             <Img src={JWT} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"8px", fontWeight:"500" }}> JWT </Typography>  
+            <Typography variant="h5" sx={{marginTop:"-5px", fontWeight:"500" }}> Jason Web Token </Typography>  
             </Grid>
             </Grow>
             </Grid>

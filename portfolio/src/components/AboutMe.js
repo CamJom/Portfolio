@@ -18,10 +18,8 @@ import ListItem from "@mui/material/ListItem";
 import ListItemAvatar from "@mui/material/ListItemAvatar";
 import ListItemText from "@mui/material/ListItemText";
 import Avatar from "@mui/material/Avatar";
+import { useTheme, useMediaQuery } from '@material-ui/core';
 
-
-let theme = createTheme();
-theme = responsiveFontSizes(theme);
 
 const Img = styled('img')({
   margin: '15px',
@@ -31,7 +29,15 @@ const Img = styled('img')({
   borderRadius: '10px',
 });
 
+//use media query 
+
 const AboutMe = () => {
+  
+  const theme = useTheme();
+  const whenMobile = useMediaQuery(theme.breakpoints.up('sm'));
+
+  console.log(whenMobile)
+  
   const [checked, setChecked] = React.useState(true);
   return (
     <Grid 
@@ -86,17 +92,15 @@ const AboutMe = () => {
       <Grid
       display="flex"
       align="center"
-      justifyContent="space-around"
-      maxWidth="80%"
+      justifyContent="center"
+      maxWidth="100%"
       marginTop="1%"
-      flexWrap="wrap"
       container
       >
       <Grid item
       display="flex"
       align="center"
       justifyContent="center"
-      spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}
       flexWrap="wrap"
       sx={{ padding:"5px", }}
       minWidth="25%"
@@ -166,8 +170,6 @@ const AboutMe = () => {
       display="flex"
       align="center"
       justifyContent="center"
-      spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}
-      minWidth="60%"
       > 
               <Grow in={checked} style={{ transformOrigin: 'top' }}
           {...(checked ? { timeout: 1500 } : {})}>
@@ -180,7 +182,6 @@ const AboutMe = () => {
       align="center"
       justifyContent="center"
       flexDirection="column"
-      maxWidth="100%"
       variant="h6"
       border=""
       >
@@ -191,7 +192,9 @@ const AboutMe = () => {
         display="flex"
         align="center"
         justifyContent="center"
-        flexDirection="row"
+        flexDirection={ whenMobile ? "row" : "column" }
+        alignItems="center"
+        flexWrap="wrap"
         >
         <Grow in={checked} style={{ transformOrigin: 'top' }}
           {...(checked ? { timeout: 1000 } : {})}>

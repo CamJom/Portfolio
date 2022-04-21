@@ -50,7 +50,7 @@ const ContactMe = () => {
                   textAlign="center"
                   > 
         <ThemeProvider theme={theme}>
-        <Typography variant="h2"> 
+        <Typography variant="h2" sx={{ fontWeight:600 }}> 
         Contact me on:  
         </Typography>
         </ThemeProvider>
@@ -76,7 +76,7 @@ const ContactMe = () => {
       <Grid item
       sx={{ marginRight:3 }}
       >
-        <Typography variant="h4"> Email Address </Typography>
+        <Typography variant="h4" sx={{ fontWeight:400 }} > My Email </Typography>
           <Img height="100" src={Email} alt="Email-Logo" /> 
         <Typography variant="h6"> Jomari1095@gmail.com </Typography>
         
@@ -90,7 +90,7 @@ const ContactMe = () => {
       <Grid item
       sx={{ marginLeft:3 }}>
         <Link href='https://www.linkedin.com/in/jomaric/' color="inherit" underline="none">
-        <Typography variant="h4"> LinkedIn </Typography>
+        <Typography variant="h4" sx={{ fontWeight:400 }} > My LinkedIn </Typography>
           <Img height="100" src={LinkedIn} alt="LinkedIn-Logo" />
         </Link> 
       </Grid>
@@ -101,7 +101,7 @@ const ContactMe = () => {
       <Grid item
       sx={{ marginLeft:3 }}>
         <Link href='https://github.com/CamJom' color="inherit" underline="none">
-        <Typography variant="h4"> Github Page </Typography>
+        <Typography variant="h4" sx={{ fontWeight:400 }}> My Github </Typography>
           <Img height="100" src={Github} alt="Github-Logo" />
         </Link> 
       </Grid>
