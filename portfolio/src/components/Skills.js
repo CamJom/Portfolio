@@ -273,7 +273,7 @@ const Skills = () => {
             alignItems="center"
             margin="0px 10px">
             <Img src={JWT} alt="Home-Logo" />
-            <Typography variant="h5" sx={{marginTop:"-5px", fontWeight:"500" }}> Jason Web Token </Typography>  
+            <Typography variant="h5" sx={{marginTop:"-5px", fontWeight:"500" }}> Json Web Token </Typography>  
             </Grid>
             </Grow>
             </Grid>
